@@ -12,7 +12,7 @@ export default function AboutPage() {
     <main className="min-h-screen bg-background">
       <SmoothScroll>
         <Navbar />
-        
+
         {/* Hero Section */}
         <section className="pt-40 pb-20 px-4">
           <div className="container mx-auto text-center">
@@ -53,7 +53,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               </motion.div>
-              
+
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -63,7 +63,7 @@ export default function AboutPage() {
               >
                 <div className="absolute top-0 right-0 w-4/5 h-4/5 rounded-3xl overflow-hidden shadow-2xl z-10">
                   <Image
-                    src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070&auto=format&fit=crop"
+                    src="/images/gallery/01.png"
                     alt="Timini Architecture"
                     fill
                     className="object-cover"
@@ -71,7 +71,7 @@ export default function AboutPage() {
                 </div>
                 <div className="absolute bottom-0 left-0 w-3/5 h-3/5 rounded-3xl overflow-hidden shadow-xl border-8 border-background z-20">
                   <Image
-                    src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=2025&auto=format&fit=crop"
+                    src="/images/gallery/03.png"
                     alt="Timini Gardens"
                     fill
                     className="object-cover"

@@ -8,7 +8,7 @@ import { Button } from "./ui/Button";
 
 const galleryImages = [
   {
-    src: "/images/rooms/08.png",
+    src: "/images/gallery/01.png",
     alt: "Architecture Timini",
     className: "col-span-1 md:col-span-2 row-span-2 h-96 md:h-full",
   },

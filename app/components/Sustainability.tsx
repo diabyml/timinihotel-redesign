@@ -24,7 +24,7 @@ export default function Sustainability() {
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               Notre engagement envers le développement durable se reflète dans chaque aspect de notre établissement.
-              Grâce à notre système de forage, nous garantissons une eau pure et abondante, tandis que notre
+              Grâce à notre système solaire et à notre système de forage, nous garantissons une eau pure et abondante, tandis que notre
               système de chauffage de l&apos;eau sanitaire et notre climatisation optimisée assurent un confort
               absolu tout en réduisant notre empreinte carbone.
             </p>

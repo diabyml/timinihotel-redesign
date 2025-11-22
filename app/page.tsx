@@ -17,11 +17,11 @@ export default function Home() {
       <SmoothScroll>
         <Navbar />
         <Hero />
-        <RoomShowcase />
         <VideoSpotlight />
+        <GalleryPreview />
+        <RoomShowcase />
         <Experience />
         <Sustainability />
-        <GalleryPreview />
         <Amenities />
         <Footer />
       </SmoothScroll>
