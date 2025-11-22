@@ -41,7 +41,7 @@ export default function HotelBot() {
 
     return (
         <div
-            className="absolute bottom-6 right-8 z-30 flex flex-col items-end pointer-events-auto"
+            className="absolute bottom-7 right-8 z-30 flex flex-col items-end pointer-events-auto"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >

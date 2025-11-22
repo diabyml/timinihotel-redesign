@@ -151,7 +151,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="flex flex-col sm:flex-row gap-6 justify-center items-center"
         >
-          <Link href="/contact">
+          <Link href="/contact" className="hidden md:block">
             <Button
               size="lg"
               className="rounded-full px-10 py-7 text-lg bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 transition-all hover:scale-105"
@@ -172,15 +172,15 @@ export default function Hero() {
       </motion.div>
 
       {/* Scroll Indicator */}
-      {/* <motion.div
+      <motion.div
         className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
       >
         <div className="w-[1px] h-20 bg-gradient-to-b from-primary to-transparent" />
-      </motion.div> */}
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+      </motion.div>
+      {/* Scroll indicator v2 */}
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
         <motion.div
           className="w-6 h-10 border-2 border-white rounded-full flex justify-center"
           initial={{ opacity: 0 }}
@@ -198,13 +198,13 @@ export default function Hero() {
             }}
           />
         </motion.div>
-      </div>
+      </div> */}
 
       {/* Hotel Bot */}
-      <div className="hidden md:inline-block">
+      {/* <div className="hidden md:inline-block">
 
-        <HotelBot />
-      </div>
+      </div> */}
+      <HotelBot />
     </section>
   );
 }
