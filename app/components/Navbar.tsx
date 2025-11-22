@@ -50,12 +50,12 @@ export default function Navbar() {
               "text-2xl font-black tracking-tighter transition-colors",
               showSolidNav ? "text-foreground" : "text-white"
             )}>
-              TIMINI
+              TIMINI HOTEL
             </span>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-10">
+          <nav className="hidden lg:flex items-center gap-10">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -78,7 +78,7 @@ export default function Navbar() {
           {/* Mobile Menu Toggle */}
           <button
             className={cn(
-              "md:hidden relative z-50 p-2 transition-colors hover:text-primary",
+              "lg:hidden relative z-50 p-2 transition-colors hover:text-primary",
               showSolidNav ? "text-foreground" : "text-white"
             )}
             onClick={() => setIsMenuOpen(!isMenuOpen)}

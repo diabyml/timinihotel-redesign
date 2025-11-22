@@ -9,7 +9,7 @@ export default function VideoSpotlight() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section className="py-24 bg-secondary/30">
+    <section className="py-24 bg-secondary/30" id="spotlight">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <span className="text-primary uppercase tracking-widest text-sm font-medium mb-4 block">

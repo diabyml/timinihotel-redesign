@@ -159,7 +159,7 @@ export default function Hero() {
               Réserver
             </Button>
           </Link>
-          <Link href="/#rooms">
+          <Link href="/#spotlight" >
             <Button
               size="lg"
               variant="outline"
@@ -201,7 +201,10 @@ export default function Hero() {
       </div>
 
       {/* Hotel Bot */}
-      <HotelBot />
+      <div className="hidden md:inline-block">
+
+        <HotelBot />
+      </div>
     </section>
   );
 }

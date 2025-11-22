@@ -39,7 +39,56 @@ export default function RoomShowcase() {
 
   return (
     <section ref={containerRef} id="rooms" className="relative bg-background">
-      <div className="sticky top-0 h-screen flex items-center overflow-hidden">
+      {/* Mobile Layout */}
+      <div className="block md:hidden py-20 px-4">
+        <div className="container mx-auto space-y-16">
+          <div className="text-center mb-12">
+            <span className="text-primary uppercase tracking-widest text-sm font-medium mb-4 block">
+              Collection Exclusive
+            </span>
+            <h2 className="text-4xl font-black text-foreground">
+              Nos Chambres
+            </h2>
+          </div>
+
+          {rooms.map((room) => (
+            <motion.div
+              key={room.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="group"
+            >
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl mb-6">
+                <Image
+                  src={room.image}
+                  alt={room.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              <div className="space-y-4">
+                <div className="flex justify-between items-start">
+                  <h3 className="text-2xl font-bold text-foreground">{room.title}</h3>
+                  <span className="text-xl font-light text-primary">{room.price}</span>
+                </div>
+                <p className="text-muted-foreground leading-relaxed">
+                  {room.description}
+                </p>
+                <Link href="/contact" className="inline-block pt-2">
+                  <Button className="rounded-full px-8 bg-foreground text-background hover:bg-foreground/90 w-full">
+                    Réserver
+                  </Button>
+                </Link>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      {/* Desktop Layout */}
+      <div className="hidden md:block sticky top-0 h-screen flex items-center overflow-hidden">
         {rooms.map((room, index) => {
           // eslint-disable-next-line react-hooks/rules-of-hooks
           const y = useTransform(
@@ -121,7 +170,7 @@ export default function RoomShowcase() {
         })}
       </div>
       {/* Spacer to allow scrolling through the sticky section */}
-      <div style={{ height: `${rooms.length * 100}vh` }} />
+      <div className="hidden md:block" style={{ height: `${rooms.length * 100}vh` }} />
     </section>
   );
 }
