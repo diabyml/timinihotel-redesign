@@ -1,0 +1,5 @@
+SEO FILES:
+- layout.tsx
+- robots.ts
+- sitemap.ts
+- JsonLd.tsx
