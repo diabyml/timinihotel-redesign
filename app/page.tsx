@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import IntroSection from "./components/IntroSection";
 import Experience from "./components/Experience";
 import Amenities from "./components/Amenities";
 import Sustainability from "./components/Sustainability";
@@ -17,6 +18,7 @@ export default function Home() {
       <SmoothScroll>
         <Navbar />
         <Hero />
+        <IntroSection />
         <VideoSpotlight />
         <GalleryPreview />
         <RoomShowcase />

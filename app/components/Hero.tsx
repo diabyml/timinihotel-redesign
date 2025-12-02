@@ -96,17 +96,17 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-background">
+    <section className="relative h-[60vh] w-full md:h-screen overflow-hidden flex items-center justify-center bg-background">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero-cinematic.png"
           alt="Timini Hotel Architecture"
           fill
-          className="object-cover object-[center_bottom] sm:object-center"
+          className="object-cover object-[30%_center] sm:object-center"
           priority
         />
-        <div className="absolute inset-0 bg-black/60" />
+        {/* <div className="absolute inset-0 bg-black/30" /> */}
       </div>
 
       {/* Animated Background Canvas */}
@@ -126,7 +126,7 @@ export default function Hero() {
       {/* Content */}
       <motion.div
         style={{ y, opacity }}
-        className="relative z-10 container mx-auto px-4 text-center"
+        className="relative z-10 container mt-12 md:mt-0  mx-auto px-4 text-center"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -134,7 +134,7 @@ export default function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="mb-8"
         >
-          <span className="text-primary uppercase tracking-[0.3em] text-sm font-medium mb-4 block">
+          <span className="relative inline-block px-3 py-1 rounded-md bg-black/60 text-white uppercase tracking-[0.3em] text-sm font-medium mb-4">
             Bienvenue à Ségou
           </span>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter text-white mb-2">
@@ -204,7 +204,7 @@ export default function Hero() {
       {/* <div className="hidden md:inline-block">
 
       </div> */}
-      <HotelBot />
+      {/* <HotelBot /> */}
     </section>
   );
 }
